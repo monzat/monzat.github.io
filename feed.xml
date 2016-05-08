@@ -5,85 +5,106 @@
     <description>This is the best site in the whole world</description>
     <link>https://y7kim.github.io/</link>
     <atom:link href="https://y7kim.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 25 Apr 2016 22:42:15 +0200</pubDate>
-    <lastBuildDate>Mon, 25 Apr 2016 22:42:15 +0200</lastBuildDate>
+    <pubDate>Sun, 08 May 2016 12:00:25 +0200</pubDate>
+    <lastBuildDate>Sun, 08 May 2016 12:00:25 +0200</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
-        <title>Dreams</title>
-        <description>
-</description>
-        <pubDate>Fri, 18 Jul 2014 00:00:00 +0200</pubDate>
-        <link>https://y7kim.github.io/web%20development/2014/07/18/project-1/</link>
-        <guid isPermaLink="true">https://y7kim.github.io/web%20development/2014/07/18/project-1/</guid>
+        <title>About me</title>
+        <description></description>
+        <pubDate>Sat, 07 May 2016 00:00:00 +0200</pubDate>
+        <link>https://y7kim.github.io/menu-item/2016/05/07/about-me/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/menu-item/2016/05/07/about-me/</guid>
         
         
-        <category>Web Development</category>
-        
-      </item>
-    
-      <item>
-        <title>Escape</title>
-        <description>
-</description>
-        <pubDate>Thu, 17 Jul 2014 00:00:00 +0200</pubDate>
-        <link>https://y7kim.github.io/web%20development/2014/07/17/project-2/</link>
-        <guid isPermaLink="true">https://y7kim.github.io/web%20development/2014/07/17/project-2/</guid>
-        
-        
-        <category>Web Development</category>
+        <category>menu-item</category>
         
       </item>
     
       <item>
-        <title>Golden</title>
-        <description>
+        <title>Security</title>
+        <description>&lt;p&gt;Web security Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 16 Jul 2014 00:00:00 +0200</pubDate>
-        <link>https://y7kim.github.io/web%20development/2014/07/16/project-3/</link>
-        <guid isPermaLink="true">https://y7kim.github.io/web%20development/2014/07/16/project-3/</guid>
+        <pubDate>Fri, 06 May 2016 00:00:00 +0200</pubDate>
+        <link>https://y7kim.github.io/service/2016/05/06/web-security/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/service/2016/05/06/web-security/</guid>
         
         
-        <category>Web Development</category>
+        <category>service</category>
         
       </item>
     
       <item>
-        <title>Treehouse</title>
-        <description>
+        <title>Design</title>
+        <description>&lt;p&gt;Design, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.&lt;/p&gt;
 </description>
+        <pubDate>Fri, 06 May 2016 00:00:00 +0200</pubDate>
+        <link>https://y7kim.github.io/service/2016/05/06/responsive-design/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/service/2016/05/06/responsive-design/</guid>
+        
+        
+        <category>service</category>
+        
+      </item>
+    
+      <item>
+        <title>E-Commerce</title>
+        <description>&lt;p&gt;Ecommerce, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 May 2016 00:00:00 +0200</pubDate>
+        <link>https://y7kim.github.io/service/2016/05/06/ecommerce/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/service/2016/05/06/ecommerce/</guid>
+        
+        
+        <category>service</category>
+        
+      </item>
+    
+      <item>
+        <title>Services</title>
+        <description></description>
+        <pubDate>Fri, 06 May 2016 00:00:00 +0200</pubDate>
+        <link>https://y7kim.github.io/menu-item/2016/05/06/services/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/menu-item/2016/05/06/services/</guid>
+        
+        
+        <category>menu-item</category>
+        
+      </item>
+    
+      <item>
+        <title>Opinions</title>
+        <description></description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 +0200</pubDate>
-        <link>https://y7kim.github.io/web%20development/2014/07/15/project-4/</link>
-        <guid isPermaLink="true">https://y7kim.github.io/web%20development/2014/07/15/project-4/</guid>
+        <link>https://y7kim.github.io/menu-item/2014/07/15/opinions/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/menu-item/2014/07/15/opinions/</guid>
         
         
-        <category>Web Development</category>
+        <category>menu-item</category>
         
       </item>
     
       <item>
-        <title>Round Icons</title>
-        <description>
-</description>
+        <title>Contact</title>
+        <description></description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 +0200</pubDate>
-        <link>https://y7kim.github.io/web%20development/2014/07/15/project-6/</link>
-        <guid isPermaLink="true">https://y7kim.github.io/web%20development/2014/07/15/project-6/</guid>
+        <link>https://y7kim.github.io/menu-item/2014/07/15/contact/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/menu-item/2014/07/15/contact/</guid>
         
         
-        <category>Web Development</category>
+        <category>menu-item</category>
         
       </item>
     
       <item>
-        <title>Startup Framework</title>
-        <description>
-</description>
-        <pubDate>Mon, 14 Jul 2014 00:00:00 +0200</pubDate>
-        <link>https://y7kim.github.io/web%20development/2014/07/14/project-5/</link>
-        <guid isPermaLink="true">https://y7kim.github.io/web%20development/2014/07/14/project-5/</guid>
+        <title>Blog</title>
+        <description></description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 +0200</pubDate>
+        <link>https://y7kim.github.io/menu-item/2014/07/15/blog/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/menu-item/2014/07/15/blog/</guid>
         
         
-        <category>Web Development</category>
+        <category>menu-item</category>
         
       </item>
     

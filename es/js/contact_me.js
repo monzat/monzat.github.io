@@ -1,3 +1,5 @@
+/*
+
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
@@ -5,6 +7,9 @@ $(function() {
         submitError: function($form, event, errors) {
             // additional error messages or events
         },
+
+
+/*
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
@@ -52,6 +57,7 @@ $(function() {
                 },
             })
         },
+     
         filter: function() {
             return $(this).is(":visible");
         },
@@ -64,7 +70,11 @@ $(function() {
 });
 
 
-/*When clicking on Full hide fail/success boxes */
+
+//When clicking on Full hide fail/success boxes 
 $('#name').focus(function() {
     $('#success').html('');
 });
+
+   */
+
