@@ -979,6 +979,22 @@ DAVID's CSS
 
  */
 
+.tablehead{
+	text-align: center;
+}
+
+.tablehead p {
+	text-align: justify;
+}
+
+table{
+    text-align: center;
+}
+
+th{
+	vertical-align: middle !important;
+}
+
 .story a{
 	color: red;
 }
@@ -988,7 +1004,7 @@ DAVID's CSS
 } 
 
 .ratebtn{
-	background-color: rgba(103, 83, 83, 0.87) !important;
+	background-color: rgba(36, 138, 148, 0.87) !important;
 }
 
 .show-read-more .more-text{
