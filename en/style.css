@@ -209,18 +209,10 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #FFEA08;
-    background-color: #FFEA08;
+
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #FFEA08;
-}
 
 .navbar-default .nav li a {
     text-transform: uppercase;
@@ -978,6 +970,22 @@ Licensed under MIT
 DAVID's CSS
 
  */
+
+
+.navbar-toggle2{
+	    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+
+}
 
 .tablehead{
 	text-align: center;
