@@ -76,7 +76,7 @@ var sendEmail = {
 		if (!sendEmail.spam()){
 			sendEmail.reset();
 			$.ajax({
-				url: '//formspree.io/davidmartins85@gmail.com',
+				url: '//formspree.io/monika.zatylny@gmail.com',
 				method: 'POST',
 				data: $(this).serialize(),
 				dataType: 'json',
