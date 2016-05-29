@@ -51,7 +51,7 @@ var sendEmail = {
 		$('#email').val("");
 		$('#service').val("");
 		$('#service_language').val("");
-		$('#phone').val("");
+		$('#country').val("");
 		$('#opinion').val("");
 		
 
