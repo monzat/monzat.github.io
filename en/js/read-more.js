@@ -2,7 +2,6 @@ $(document).ready(function(){
 	var maxLength = 170;
 	$(".show-read-more").each(function(){
 		var myStr = $(this).text();
-		console.log(myStr);
 		if($.trim(myStr).length > maxLength){
 			var newStr = myStr.substring(0, maxLength);
 			var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
