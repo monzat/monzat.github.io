@@ -37,7 +37,7 @@
 
 
     <body id="page-top" class="index">
-
+    
     <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div >
@@ -641,94 +641,100 @@
 
     <section id="contact"> 
 
-      <section id="contact"> 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contacta-me</h2>
-                <h3 class="section-subheading text-muted">Estoy disponible...</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-  
-  <form class="form-horizontal" id="contact-form-2">
-    <fieldset>
-      <!-- Text input-->
-
-      <div class="form-group">
-        <div class=" inputGroupContainer">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input id="name" name="name" placeholder="Nombre" class="form-control"  type="text" required>
-          </div>
-        </div>
-      </div>
-
-
-
-      <!-- Text input-->
-      <div class="form-group">
-        <div class=" inputGroupContainer">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input id="email" name="email" placeholder="E-Mail" class="form-control"  type="email" required>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Text input-->
-
-      <div class="form-group">
-        <div class=" inputGroupContainer">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-            <input id="phone" name="phone" placeholder="+34 123 456 789" class="form-control" type="tel" >
-          </div>
-        </div>
-      </div>
-
-  
-      <!-- Text area -->
-
-      <div class="form-group">
-        
-        <div class=" inputGroupContainer">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-           <textarea id="opinion" rows="4" class="form-control" name="message" placeholder="Mesage ..." required></textarea>
-         </div>
-       </div>
-     </div>
-
-    
-
-
-     <!-- Button -->
-     <div class="form-group">
-      <label class=" control-label"></label>
-      <div class="">
-        <button id="submit_button-2" class="button submit_button" type="submit"> Enviar </button>
-        <button id="sending-2" class="button sending" type="" disabled> Enviando <i class="fa fa-cog fa-spin"></i></button>
-        <button id="sent-2" class="button sent" disabled> Enviado <i class="fa fa-check"></i></button>
-        <button id="error-2" class="button error" disabled> Error <i class="fa fa-times"></i></button>
-        <button id="clear-2" class="button clear"> Borrar</button>
-
-        <input type="hidden" name="_subject" value="Discolinguas - new contact message received" />
-        <input type="hidden" name="_next" value="thanks.html" />
-        <input id="email2-2" type="email"  hidden/>
-
-        
+        <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Contacta-me</h2>
+        <h3 class="section-subheading text-muted" style="color: #ffea08">Estoy disponible...</h3>
       </div>
     </div>
+    <div class="row">
 
-  </fieldset>
-</form>
+      <form class="form-horizontal" id="contact-form-2">
+        <fieldset>
+          <!-- Text input-->
+          <div class="col-md-5" style="margin: 0 30px 0 30px">
+            <div class="form-group">
+              <div class=" inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input id="name" name="name" placeholder="Nombre" class="form-control"  type="text" required>
+                </div>
+              </div>
             </div>
-        </div>
+
+
+            <!-- Text input-->
+            <div class="form-group">
+              <div class=" inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input id="email" name="email" placeholder="E-Mail" class="form-control"  type="email" required>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Text input-->
+
+            <div class="form-group">
+              <div class=" inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                  <input id="phone" name="phone" placeholder="+34 123 456 789" class="form-control" type="tel" >
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+
+            <div class="form-group">
+
+              <div class=" inputGroupContainer">
+                <div class="input-group" style="margin: 0 30px 0 30px;">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                  <textarea id="opinion" rows="7" class="form-control" name="message" placeholder="Mesage ..." required></textarea>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Button -->
+
+          </div>
+
+          <div class="col-md-12" style="margin: 0 30px 0 30px;">
+               <div class="form-group">
+              <label class=" control-label"></label>
+              <div class="">
+                <button id="submit_button-2" class="button submit_button" type="submit"> Enviar </button>
+                <button id="sending-2" class="button sending" type="" disabled> Enviando <i class="fa fa-cog fa-spin"></i></button>
+                <button id="sent-2" class="button sent" disabled> Enviado <i class="fa fa-check"></i></button>
+                <button id="error-2" class="button error" disabled> Error <i class="fa fa-times"></i></button>
+                <button id="clear-2" class="button clear"> Borrar</button>
+
+                <input type="hidden" name="_subject" value="Discolinguas - new contact message received" />
+                <input type="hidden" name="_next" value="thanks.html" />
+                <input id="email2-2" type="email"  hidden/>
+
+
+              </div>
+            </div>
+          </div>
+
+       
+
+
+        </fieldset>
+      </form>
+
+
+
     </div>
-</section>
+  </div>
+
 
 
 
@@ -779,6 +785,7 @@
 
     <script src="/js/form.js"></script>
     <script src="/js/read-more.js"></script>
+
 
 
 
