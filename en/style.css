@@ -568,6 +568,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #FFEA08;
 }
+
+
+
 /***
 User Profile Sidebar by @keenthemes
 A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
@@ -1257,13 +1260,29 @@ blockquote blockquote{
 
 
 /*
-END DAVID's CSS
+FIX COMMENTS GRID 
  */
 
 
+@media (min-width:768px) and (max-width: 991px) {
+  .row > div:nth-child(2n+3) {
+    clear: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .row > div:nth-child(3n+4) {
+    clear: left;
+  }  
+}
+@media (min-width: 1200px) {
+  .row > div:nth-child(4n+5) {
+    clear: left;
+  }  
+}
 
-
-
+/*
+END DAVID CSS  
+ */
 
 
 
