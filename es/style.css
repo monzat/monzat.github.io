@@ -819,6 +819,24 @@ DAVID's CSS
 
  */
 
+.fa-inverse{
+	color: #24445d !important;
+}
+
+.mz{
+	margin: 10px;
+}
+
+.page-scroll{
+	color: #24445d;
+	font-weight: bold;
+}
+
+.timg{
+    min-height: 175px;
+}
+
+
  .justify > p{
  	text-align: justify;
  }
