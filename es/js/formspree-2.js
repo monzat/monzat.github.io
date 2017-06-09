@@ -1,5 +1,5 @@
 
-var sendEmail = {
+var sendEmail2 = {
 
 	isError: false,
 
@@ -73,23 +73,23 @@ var sendEmail = {
 	var $contactForm2 = $('#contact-form-2');
 	$contactForm2.submit(function(e) {
 		e.preventDefault();
-		if (!sendEmail.spam()){
-			sendEmail.reset();
+		if (!sendEmail2.spam()){
+			sendEmail2.reset();
 			$.ajax({
 				url: '//formspree.io/monika.zatylny@gmail.com',
 				method: 'POST',
 				data: $(this).serialize(),
 				dataType: 'json',
 				beforeSend: function() {
-					sendEmail.loading();
+					sendEmail2.loading();
 				},
 				success: function(data) {
-					sendEmail.sent();
-					sendEmail.isError=false;
+					sendEmail2.sent();
+					sendEmail2.isError=false;
 				},
 				error: function(err) {
-					sendEmail.error("Sorry, there was a problem while sending the email. Try again, or send a normal email to davidmartins85gmail.com");
-					sendEmail.isError=true;
+					sendEmail2.error("Sorry, there was a problem while sending the email. Try again, or send a normal email to davidmartins85gmail.com");
+					sendEmail2.isError=true;
 				}
 			});
 		}else{
@@ -99,7 +99,7 @@ var sendEmail = {
 	});
 	$('#clear-2').click(function(e) {
 		e.preventDefault();
-		sendEmail.isError ? sendEmail.tryAgain() : sendEmail.clear();
+		sendEmail2.isError ? sendEmail2.tryAgain() : sendEmail2.clear();
 	});
 
 

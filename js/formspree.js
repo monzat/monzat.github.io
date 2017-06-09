@@ -3,93 +3,97 @@ var sendEmail = {
 
 	isError: false,
 
-	reset:function(){
-		$('#sent').removeClass('sent');
+	reset:function(n){
+		$('#sent'+n).removeClass('sent');
 	},
 
-	loading: function(){
-		$('#send-icon').css("display","inline");
-		$('#submit_button').css('display','none');
-		$('#sending').css('display','inline');
+	loading: function(n){
+		$('#send-icon'+n).css("display","inline");
+		$('#submit_button'+n).css('display','none');
+		$('#sending'+n).css('display','inline');
 	},
 
-	sent: function(){
-		$('#sent').css('display','inline');
-		$('#sending').css('display','none');
+	sent: function(n){
+		$('#sent'+n).css('display','inline');
+		$('#sending'+n).css('display','none');
 
-		if ($('#sent').css('display')=='inline-block'){
-			$('#sent').addClass('sent');
+		if ($('#sent'+n).css('display')=='inline-block'){
+			$('#sent'+n).addClass('sent');
 			
 		}
-		$('#clear').css('display','inline');
-		$('#close-modal').show();
+		$('#clear'+n).css('display','inline');
+		$('#close-modal'+n).show();
 		
 	},
 
-	error: function(msg){
-		$('#contact-form').append('<div class="alert alert--error">'+msg+'</div>');
-		$('#sending').css('display','none');
-		$('#sent').css('display','none');
-		$('#error').css('display','inline');
-		$('#clear').css('display','inline');
+	error: function(msg,n){
+		$('#contact-form'+n).append('<div class="alert alert--error">'+msg+'</div>');
+		$('#sending'+n).css('display','none');
+		$('#sent'+n).css('display','none');
+		$('#error'+n).css('display','inline');
+		$('#clear'+n).css('display','inline');
 	},
 
 	spam: function(){
-		if ($('#email2').val()===""){
-			return false;
+		if ($('#emails').val()===""){
+			return false; //no spam
 		}else{
 			return true;
 		}
 	},
 
-	clear: function(){
-		$('#sent').css('display','none');
-		$('#error').css('display','none');
-		$('#submit_button').css('display','inline');
-		$('#clear').css('display','none');
-		$('#name').val("");
-		$('#email').val("");
-		$('#service').val("");
-		$('#service_language').val("");
-		$('#country').val("");
-		$('#opinion').val("");
+	clear: function(n){
+		$('#sent'+n).css('display','none');
+		$('#error'+n).css('display','none');
+		$('#submit_button'+n).css('display','inline');
+		$('#clear'+n).css('display','none');
+		$('#name'+n).val("");
+		$('#email'+n).val("");
+		$('#service'+n).val("");
+		$('#phone'+n).val("");
+		$('#service_language'+n).val("");
+		$('#country'+n).val("");
+		$('#opinion'+n).val("");
 		
 
-		$('#message').val("");
-		$('.alert--error').remove();
+		$('#message'+n).val("");
+		$('.alert--error'+n).remove();
 	},
 
-	tryAgain:function(){
-		$('#error').css('display','none');
-		$('#submit_button').css('display','inline');
-		$('#clear').css('display','none');
-		$('.alert--error').remove();
+	tryAgain:function(n){
+		$('#error'+n).css('display','none');
+		$('#submit_button'+n).css('display','inline');
+		$('#clear'+n).css('display','none');
+		$('.alert--error'+n).remove();
 	}
 
 };
 
 
+function formSpree(n,target){
 
-	var $contactForm = $('#contact-form');
+	if (n==1){n=''}else{n='-'+n}
+
+	var $contactForm = $('#'+target);
 	$contactForm.submit(function(e) {
 		
 		e.preventDefault();
 		if (!sendEmail.spam()){
-			sendEmail.reset();
+			sendEmail.reset(n);
 			$.ajax({
 				url: '//formspree.io/monika.zatylny@gmail.com',
 				method: 'POST',
 				data: $(this).serialize(),
 				dataType: 'json',
 				beforeSend: function() {
-					sendEmail.loading();
+					sendEmail.loading(n);
 				},
 				success: function(data) {
-					sendEmail.sent();
+					sendEmail.sent(n);
 					sendEmail.isError=false;
 				},
 				error: function(err) {
-					sendEmail.error("Sorry, there was a problem while sending the email. Try again, or send a normal email to davidmartins85gmail.com");
+					sendEmail.error("Sorry, there was a problem while sending the email. Try again, or send a normal email to davidmartins85gmail.com",n);
 					sendEmail.isError=true;
 				}
 			});
@@ -98,10 +102,13 @@ var sendEmail = {
 		}
 		
 	});
-	$('#clear').click(function(e) {
+	$('#clear'+n).click(function(e) {
 		e.preventDefault();
-		sendEmail.isError ? sendEmail.tryAgain() : sendEmail.clear();
+		sendEmail.isError ? sendEmail.tryAgain(n) : sendEmail.clear(n);
 	});
+};
+
+	
 
 
 
